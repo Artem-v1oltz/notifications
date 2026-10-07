@@ -1,0 +1,50 @@
+@use "../base/variables" as vars;
+@use "../utils/mixin" as mix;
+@use "../utils/placeholder" as*;
+
+.alert {
+    @extend %alert-base;
+
+    &__title {
+        margin: 0 0 vars.$spacing-small;
+        font-size: 22px;
+    }
+
+    &__text {
+        margin: 0;
+        font-size: 16px;
+    }
+
+    &__close {
+        @extend %button-base;
+        position: absolute;
+        top: 10px;
+        right: 12px;
+        width: 30px;
+        height: 30px;
+        background: transparent;
+        color: inherit;
+        font-size: 24px;
+        line-height: 1;
+
+        &:hover {
+            opacity: 0.7;
+        }
+    }
+
+    &--info {
+        @include mix.alert-theme(vars.$color-info-bg, vars.$color-info-text, vars.$color-info-border );
+    }
+
+    &--success {
+        @include mix.alert-theme(vars.$color-success-bg, vars.$color-success-text, vars.$color-success-border );
+    }
+
+    &--warning {
+        @include mix.alert-theme(vars.$color-warning-bg, vars.$color-warning-text, vars.$color-warning-border );
+    }
+
+    &--error {
+        @include mix.alert-theme(vars.$color-error-bg, vars.$color-error-text, vars.$color-error-border );
+    }
+}

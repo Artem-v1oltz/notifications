@@ -1,0 +1,22 @@
+body {
+    margin: 0;
+    background: #f5f5f5;
+}
+
+.container {
+    width: min(100% - 32px, 900px);
+    margin: 0 auto;
+    padding: 40px 0;
+}
+
+.page-title {
+    margin-bottom: 30px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.alerts {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}

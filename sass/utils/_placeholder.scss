@@ -1,0 +1,13 @@
+%alert-base {
+    position: relative;
+    padding: 20px;
+    border: 2px solid;
+    border-radius: 12px;
+    font-family: Arial, sans-serif;
+}
+
+%button-base {
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+}

@@ -1,0 +1,79 @@
+.alert {
+  position: relative;
+  padding: 20px;
+  border: 2px solid;
+  border-radius: 12px;
+  font-family: Arial, sans-serif;
+}
+
+.alert__close {
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.alert__title {
+  margin: 0 0 8px;
+  font-size: 22px;
+}
+.alert__text {
+  margin: 0;
+  font-size: 16px;
+}
+.alert__close {
+  position: absolute;
+  top: 10px;
+  right: 12px;
+  width: 30px;
+  height: 30px;
+  background: transparent;
+  color: inherit;
+  font-size: 24px;
+  line-height: 1;
+}
+.alert__close:hover {
+  opacity: 0.7;
+}
+.alert--info {
+  background-color: #e3f2fd;
+  color: #1565c0;
+  border-color: #42a5f5;
+}
+.alert--success {
+  background-color: #e8f5e9;
+  color: #2e7d32;
+  border-color: #66bb6a;
+}
+.alert--warning {
+  background-color: #fff8e1;
+  color: #ef6c00;
+  border-color: #ffb300;
+}
+.alert--error {
+  background-color: #ffebee;
+  color: #c62828;
+  border-color: #ef5350;
+}
+
+body {
+  margin: 0;
+  background: #f5f5f5;
+}
+
+.container {
+  width: min(100% - 32px, 900px);
+  margin: 0 auto;
+  padding: 40px 0;
+}
+
+.page-title {
+  margin-bottom: 30px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.alerts {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}/*# sourceMappingURL=main.css.map */
